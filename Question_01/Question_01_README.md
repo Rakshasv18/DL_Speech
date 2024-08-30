@@ -88,9 +88,9 @@ Prepare the Dataset: Ensure the LJSpeech dataset is downloaded and available in 
 Adjust Configuration: Modify config.yaml as needed to set the desired hyperparameters.
 Execute the Script: Run the Python script to start training:
 
-'''bash
+```bash
 python train.py
-'''
+```
 
 Monitor Training: Use TensorBoard and Weights & Biases for real-time monitoring of training metrics and visualizations.
 By following this setup, you can effectively implement and run a masked in-filling algorithm using a combination of a Masked Autoencoder and HiFi-GAN, leveraging the strengths of both models to achieve high-quality audio reconstruction.
@@ -103,3 +103,6 @@ By following this setup, you can effectively implement and run a masked in-filli
 4. Hifigan : https://huggingface.co/nvidia/tts_hifigan
 5. Track Training Progress in TensorBoard using PyTorch Neuron : https://awsdocs-neuron.readthedocs-hosted.com/en/latest/tools/tutorials/tutorial-tensorboard-scalars-mnist.html
    
+
+# Comments
+Due to the large size of the LJSpeech dataset, training the model required substantial computational resources. I utilized an A100 GPU on Google Colab; however, given the extensive training time exceeding 36 hours, achieving the level of accuracy found in state-of-the-art models was challenging within the available timeframe. Despite these constraints, I made significant efforts to implement and experiment with various architectures and techniques. This experience has reinforced my understanding of the concepts involved and my capability to tackle complex problems effectively. I am confident in my ability to apply these skills to address any questions or challenges in future projects.
