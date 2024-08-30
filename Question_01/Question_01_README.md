@@ -27,12 +27,10 @@ Random Masking of Mel-Spectrogram:
   Skip Connections: These connections between corresponding layers in the encoder and decoder ensure that fine-grained details from the input spectrogram are preserved during reconstruction.
 
 
-References:
-
 2. Loss Function Design
 Loss Function for High-Quality Speech Reconstruction:
 
-Method: The loss function is designed to ensure that the reconstructed speech is of high quality and that the transitions at the boundaries of the masked and unmasked regions are smooth.
+  Method: The loss function is designed to ensure that the reconstructed speech is of high quality and that the transitions at the boundaries of the masked and unmasked regions are smooth.
 
 Loss Function Components:
 
@@ -41,7 +39,7 @@ Smoothness Loss: To ensure natural transitions at the boundaries of the masked r
 Perceptual Loss: If implemented, this loss compares the high-level features of the predicted and ground truth spectrograms. This can be done using a pre-trained model like a VGG network to ensure that the reconstructed speech sounds natural and intelligible.
 
 
-#References
+# References
 1. The U-Net architecture is inspired by the original U-Net paper for image segmentation (Ronneberger et al., 2015). The idea of using convolutional layers to capture both local and global information is key to the network's ability to reconstruct the masked regions.
 2. The combination of MSE and smoothness loss is a common approach in image and audio inpainting tasks. The idea of perceptual loss comes from work in image style transfer (Johnson et al., 2016) and has been adapted for speech tasks to ensure perceptual quality.
 
