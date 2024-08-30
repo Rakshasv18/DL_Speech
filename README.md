@@ -5,8 +5,7 @@ Project Overview\
 
 This repository contains two separate deep learning projects, each organized into its own folder. Both projects involve training and evaluating neural networks, and each folder includes the necessary files to run the respective models.
 
-Folder Structure
-Question_01
+Question_01\
 This folder contains all files related to the first deep learning model.
 
 model_1: This directory contains the model's weights and architecture definitions.\
