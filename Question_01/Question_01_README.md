@@ -43,6 +43,8 @@ Perceptual Loss: If implemented, this loss compares the high-level features of t
 6. Implementation Explanation
 Code Structure:
 
+Prepare the Dataset: Ensure the LJSpeech dataset is downloaded and available in the specified directory.
+
 dataloader.py: This script handles data loading and preprocessing. It includes the logic for masking the Mel-spectrograms and ensuring the masks are non-overlapping and within the desired length.
     Key Functionality: Loading and masking the Mel-spectrograms from the LJSpeech dataset, and returning both the masked and original spectrograms.
 
@@ -76,4 +78,28 @@ Po-Yao Huang, Hu Xu, Juncheng B Li, Alexei Baevski, Michael Auli, Wojciech Galub
 7. Masked Spectrogram Modeling using Masked Autoencoders for Learning General-purpose Audio Representation.
 8. Coqui TTS : https://docs.coqui.ai/en/latest/formatting_your_dataset.html.
 
+
+
+model_2 : the Masked Autoencoder is first used to reconstruct the Mel-spectrogram, and then HiFi-GAN is employed to generate the final audio waveform. This integration leverages the strengths of both models to achieve high-quality audio reconstruction.
+
+
+To run the model, follow these steps:
+Prepare the Dataset: Ensure the LJSpeech dataset is downloaded and available in the specified directory.
+Adjust Configuration: Modify config.yaml as needed to set the desired hyperparameters.
+Execute the Script: Run the Python script to start training:
+
+'''bash
+python train.py
+'''
+
+Monitor Training: Use TensorBoard and Weights & Biases for real-time monitoring of training metrics and visualizations.
+By following this setup, you can effectively implement and run a masked in-filling algorithm using a combination of a Masked Autoencoder and HiFi-GAN, leveraging the strengths of both models to achieve high-quality audio reconstruction.
+
+
+# Reference
+1. Audio manipulation with torchaudio : https://pytorch.org/tutorials/beginner/audio_preprocessing_tutorial.html
+2. audio-data-pytorch Github : https://github.com/archinetai/audio-data-pytorch
+3. Masked-Autoencoders Github: https://github.com/EdisonLeeeee/Awesome-Masked-Autoencoders
+4. Hifigan : https://huggingface.co/nvidia/tts_hifigan
+5. Track Training Progress in TensorBoard using PyTorch Neuron : https://awsdocs-neuron.readthedocs-hosted.com/en/latest/tools/tutorials/tutorial-tensorboard-scalars-mnist.html
    
