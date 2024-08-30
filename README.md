@@ -8,11 +8,12 @@ Question_01\
 This folder contains all files related to the first deep learning model.
 
 model_1: This directory contains the model's scripts and architecture definitions.\
-config.yaml: Configuration file for the model training process. Includes hyperparameters like learning rate, batch size, and the number of epochs.\
-dataloader.py: Script to load and preprocess the dataset.\
-model.py: Defines the neural network architecture and forward/backward propagation methods.\
-runs: Directory that stores the training logs, model checkpoints, and visualizations (e.g., TensorBoard files).\
-train.py: Main training script that initializes the model, loads the data, and trains the model.\
+  1. config.yaml: Configuration file for the model training process. Includes hyperparameters like learning rate, batch size, and the number of epochs.\
+  2. dataloader.py: Script to load and preprocess the dataset.\
+  3. model.py: Defines the neural network architecture and forward/backward propagation methods.\
+  4. runs: Directory that stores the training logs, model checkpoints, and visualizations (e.g., TensorBoard files).\
+  5. train.py: Main training script that initializes the model, loads the data, and trains the model.\
+
 Question_01.readme: Detailed documentation of the first project, including model architecture, data used, and training methodology.
 
 Question_02\
