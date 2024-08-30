@@ -39,11 +39,8 @@ Smoothness Loss: To ensure natural transitions at the boundaries of the masked r
 Perceptual Loss: If implemented, this loss compares the high-level features of the predicted and ground truth spectrograms. This can be done using a pre-trained model like a VGG network to ensure that the reconstructed speech sounds natural and intelligible.
 
 
-# References
-1. The U-Net architecture is inspired by the original U-Net paper for image segmentation (Ronneberger et al., 2015). The idea of using convolutional layers to capture both local and global information is key to the network's ability to reconstruct the masked regions.
-2. The combination of MSE and smoothness loss is a common approach in image and audio inpainting tasks. The idea of perceptual loss comes from work in image style transfer (Johnson et al., 2016) and has been adapted for speech tasks to ensure perceptual quality.
 
-3. Implementation Explanation
+6. Implementation Explanation
 Code Structure:
 
 dataloader.py: This script handles data loading and preprocessing. It includes the logic for masking the Mel-spectrograms and ensuring the masks are non-overlapping and within the desired length.
@@ -64,3 +61,22 @@ Logging with TensorBoard:
 Modularity:
 
 The code is designed to be modular, with separate files for the data loader, model, and training script. This allows for easy modification and experimentation with different components of the pipeline.
+
+
+
+
+# References
+1. The U-Net architecture is inspired by the original U-Net paper for image segmentation (Ronneberger et al., 2015). The idea of using convolutional layers to capture both local and global information is key to the network's ability to reconstruct the masked regions.
+2. The combination of MSE and smoothness loss is a common approach in image and audio inpainting tasks. The idea of perceptual loss comes from work in image style transfer (Johnson et al., 2016) and has been adapted for speech tasks to ensure perceptual quality.
+3. Masked Autoencoders that Listen 
+Po-Yao Huang, Hu Xu, Juncheng B Li, Alexei Baevski, Michael Auli, Wojciech Galuba, Florian Metze, Christoph Feichtenhofer
+4. Progressive loss functions for speech enhancement with deep neural networks
+Jorge Llombart, Dayana Ribas, Antonio Miguel, Luis Vicente, Alfonso Ortega & Eduardo Lleida 
+EURASIP Journal on Audio, Speech, and Music Processing volume
+5.RFWave: Multi-band Rectified Flow for Audio Waveform Reconstruction
+Peng Liu laupeng1989@gmail.com &Dongyang Dai accum.dai@gmail.com &Zhiyong Wu Shenzhen International Graduate School, Tsinghua University zywu@sz.tsinghua.edu.cn
+6.A 2019 Guide to Speech Synthesis with Deep Learning (https://fritz.ai/speech-synthesis-with-deep-learning/)
+7.Masked Spectrogram Modeling using Masked Autoencoders for Learning General-purpose Audio Representation
+8. Coqui TTS : https://docs.coqui.ai/en/latest/formatting_your_dataset.html
+
+   
