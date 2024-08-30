@@ -7,12 +7,12 @@ This repository contains two separate deep learning projects, each organized int
 Question_01\
 This folder contains all files related to the first deep learning model.
 
-Question_01.readme: Detailed documentation of the first project, including model architecture, data used, and training methodology.
+Question_01_README.md: Detailed documentation of the first project, including model architecture, data used, and training methodology.
 
 Question_02\
 This folder contains files related to the second deep learning model, focused on solving the MNIST classification problem using a custom multi-layer perceptron.
 
-Question_02.readme: Detailed documentation of the second project, including model architecture, data used, and training methodology.
+Question_02_README.md: Detailed documentation of the second project, including model architecture, data used, and training methodology.
 
 
 Environment Setup\
