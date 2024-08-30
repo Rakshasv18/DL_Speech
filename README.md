@@ -1,7 +1,7 @@
 # Flawless
 Flawless_assignment
 
-Project Overview\
+Project Overview
 
 This repository contains two separate deep learning projects, each organized into its own folder. Both projects involve training and evaluating neural networks, and each folder includes the necessary files to run the respective models.
 
