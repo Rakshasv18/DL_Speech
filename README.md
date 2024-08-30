@@ -4,26 +4,26 @@ Flawless_assignment
 Project Overview
 This repository contains two separate deep learning projects, each organized into its own folder. Both projects involve training and evaluating neural networks, and each folder includes the necessary files to run the respective models.
 
-Folder Structure
-Question_01
-This folder contains all files related to the first deep learning model.
+Folder Structure\
+Question_01\
+This folder contains all files related to the first deep learning model.\
 
-model_1: This directory contains the model's weights and architecture definitions.
-config.yaml: Configuration file for the model training process. Includes hyperparameters like learning rate, batch size, and the number of epochs.
-dataloader.py: Script to load and preprocess the dataset.
-model.py: Defines the neural network architecture and forward/backward propagation methods.
-runs: Directory that stores the training logs, model checkpoints, and visualizations (e.g., TensorBoard files).
-train.py: Main training script that initializes the model, loads the data, and trains the model.
+model_1: This directory contains the model's weights and architecture definitions.\
+config.yaml: Configuration file for the model training process. Includes hyperparameters like learning rate, batch size, and the number of epochs.\
+dataloader.py: Script to load and preprocess the dataset.\
+model.py: Defines the neural network architecture and forward/backward propagation methods.\
+runs: Directory that stores the training logs, model checkpoints, and visualizations (e.g., TensorBoard files).\
+train.py: Main training script that initializes the model, loads the data, and trains the model.\
 Question_01.readme: Detailed documentation of the first project, including model architecture, data used, and training methodology.
 
 Question_02
-This folder contains files related to the second deep learning model, focused on solving the MNIST classification problem using a custom multi-layer perceptron.
+This folder contains files related to the second deep learning model, focused on solving the MNIST classification problem using a custom multi-layer perceptron.\
 
-mnist.py: Script that loads the MNIST dataset and manages preprocessing tasks.
-models: This directory contains all model-related Python files.
-__init__.py: Initializes the models module.
-hiddenlayer.py: Defines the custom HiddenLayer class used in the neural network.
-multilayerperceptron.py: Defines the MultiLayerPerceptron class, which builds and manages the overall network.
+mnist.py: Script that loads the MNIST dataset and manages preprocessing tasks.\
+models: This directory contains all model-related Python files.\
+__init__.py: Initializes the models module.\
+hiddenlayer.py: Defines the custom HiddenLayer class used in the neural network.\
+multilayerperceptron.py: Defines the MultiLayerPerceptron class, which builds and manages the overall network.\
 Question_02.readme: Detailed documentation of the second project, including model architecture, data used, and training methodology.
 
 
