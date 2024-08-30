@@ -27,7 +27,7 @@ Question_02.readme: Detailed documentation of the second project, including mode
 
 
 
-Environment Setup
+Environment Setup\
 To set up the environment required for both projects, use the environment.yaml file included in the repository. This file contains all the dependencies and versions required to run the code.
 
 To create the environment, run the following command:
