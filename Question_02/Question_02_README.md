@@ -4,7 +4,7 @@ Assumptions and design choices:
 3. Loss Function: We use Cross-Entropy loss, which is suitable for multi-class classification problems.
 4. Gradient Descent: We implement stochastic gradient descent (SGD) without mini-batches for simplicity. In practice, mini-batch SGD would be more efficient.
 5. Initialization: We initialize weights with small random values and biases with zeros.
-6. Learning Rate: We use a fixed learning rate of 0.1. In practice, adaptive learning rates or learning rate schedules could improve performance.
+6. Learning Rate: We use a learning rate of 0.1, 0.001, 0.0001.( Tried all the 3 learning rate , 0.0001 gives low loss compared to others)
 7. Epochs: We train for 100 epochs. This number can be adjusted based on convergence and computational resources.
 8. Data Preprocessing: We standardize the input features using StandardScaler from sklearn.
 
