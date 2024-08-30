@@ -1,7 +1,7 @@
 For in-filling tasks such as reconstructing masked regions of a Mel-spectrogram, both Masked Autoencoder (MAE) algorithms and U-Net models are valid choices, but they have different strengths and are suited for different types of tasks. The choice depends on the specific requirements of your project.
 
-    1. MAE is ideal if your task involves predicting missing parts based on the visible parts, and you want to leverage self-supervised learning techniques.
-    2. U-Net is better suited for tasks that involve reconstructing masked regions with detailed local and global context, especially when the entire input is available during training.
+ 1. MAE is ideal if your task involves predicting missing parts based on the visible parts, and you want to leverage self-supervised learning techniques.
+ 2. U-Net is better suited for tasks that involve reconstructing masked regions with detailed local and global context, especially when the entire input is available during training.
     
 
 model_1: This directory contains the model's scripts and architecture definitions.\
