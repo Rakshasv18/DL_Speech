@@ -4,7 +4,8 @@ For in-filling tasks such as reconstructing masked regions of a Mel-spectrogram,
  2. U-Net is better suited for tasks that involve reconstructing masked regions with detailed local and global context, especially when the entire input is available during training.
     
 
-model_1: This directory contains the model's scripts and architecture definitions.
+# model_1
+This directory contains the model's scripts and architecture definitions.
 
 1. Random Masking and Network Design
 Random Masking of Mel-Spectrogram:
@@ -80,7 +81,8 @@ Po-Yao Huang, Hu Xu, Juncheng B Li, Alexei Baevski, Michael Auli, Wojciech Galub
 
 
 
-model_2 : the Masked Autoencoder is first used to reconstruct the Mel-spectrogram, and then HiFi-GAN is employed to generate the final audio waveform. This integration leverages the strengths of both models to achieve high-quality audio reconstruction.
+# model_2  
+The Masked Autoencoder is first used to reconstruct the Mel-spectrogram, and then HiFi-GAN is employed to generate the final audio waveform. This integration leverages the strengths of both models to achieve high-quality audio reconstruction.
 
 
 To run the model, follow these steps:
