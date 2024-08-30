@@ -3,6 +3,13 @@ import torch.nn as nn
 
 class UNet(nn.Module):
     def __init__(self, in_channels, out_channels):
+        """
+        Initialize the UNet model.
+
+        Args:
+            in_channels (int): Number of input channels.
+            out_channels (int): Number of output channels.
+        """
         super(UNet, self).__init__()
         
         # Encoder
@@ -23,6 +30,16 @@ class UNet(nn.Module):
         self.final_conv = nn.Conv2d(64, out_channels, kernel_size=1)
 
     def conv_block(self, in_channels, out_channels):
+        """
+        Create a convolutional block with two convolutional layers followed by ReLU activation.
+
+        Args:
+            in_channels (int): Number of input channels.
+            out_channels (int): Number of output channels.
+
+        Returns:
+            nn.Sequential: Sequential model containing the convolutional layers and activation functions.
+        """
         return nn.Sequential(
             nn.Conv2d(in_channels, out_channels, kernel_size=3, padding=1),
             nn.ReLU(inplace=True),
@@ -31,12 +48,31 @@ class UNet(nn.Module):
         )
     
     def upconv_block(self, in_channels, out_channels):
+        """
+        Create an upsampling block with a transposed convolution layer followed by ReLU activation.
+
+        Args:
+            in_channels (int): Number of input channels.
+            out_channels (int): Number of output channels.
+
+        Returns:
+            nn.Sequential: Sequential model containing the upsampling layer and activation function.
+        """
         return nn.Sequential(
             nn.ConvTranspose2d(in_channels, out_channels, kernel_size=2, stride=2),
             nn.ReLU(inplace=True)
         )
 
     def forward(self, x):
+        """
+        Perform the forward pass through the UNet model.
+
+        Args:
+            x (torch.Tensor): Input tensor of shape (batch_size, in_channels, height, width).
+
+        Returns:
+            torch.Tensor: Output tensor of shape (batch_size, out_channels, height, width) after passing through the network.
+        """
         # Encoder
         e1 = self.encoder1(x)
         e2 = self.encoder2(e1)
