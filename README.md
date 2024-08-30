@@ -7,7 +7,7 @@ This repository contains two separate deep learning projects, each organized int
 Question_01\
 This folder contains all files related to the first deep learning model.
 
-model_1: This directory contains the model's weights and architecture definitions.\
+model_1: This directory contains the model's scripts and architecture definitions.\
 config.yaml: Configuration file for the model training process. Includes hyperparameters like learning rate, batch size, and the number of epochs.\
 dataloader.py: Script to load and preprocess the dataset.\
 model.py: Defines the neural network architecture and forward/backward propagation methods.\
