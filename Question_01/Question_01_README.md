@@ -9,21 +9,24 @@ model_1: This directory contains the model's scripts and architecture definition
 1. Random Masking and Network Design
 Random Masking of Mel-Spectrogram:
 
-Method: In the provided code, the random masking of 1 or 2 non-overlapping segments of the Mel-spectrogram is achieved in the dataloader.py. Specifically, the masking is done by selecting random segments of the spectrogram that span 10-20% of the total length. These segments are replaced with zeros or a similar placeholder to indicate missing data.
+  Method: In the provided code, the random masking of 1 or 2 non-overlapping segments of the Mel-spectrogram is achieved in the dataloader.py. Specifically, the masking is done by selecting random segments of the spectrogram that span 10-20% of the total length. These segments are replaced with zeros or a similar placeholder to indicate missing data.
+  
+  Code Details:
+  
+  Random indices are chosen within the spectrogram length, and then the corresponding portions of the spectrogram are masked.
+  The implementation ensures that the masked segments do not overlap by carefully managing the starting points of each mask.
 
-Code Details:
+2. Network Design:
 
-Random indices are chosen within the spectrogram length, and then the corresponding portions of the spectrogram are masked.
-The implementation ensures that the masked segments do not overlap by carefully managing the starting points of each mask.
-Network Design:
+ Network Architecture: The chosen network is a U-Net-like convolutional neural network (CNN) designed to reconstruct the masked regions. The U-Net architecture is well-suited for this task because it combines encoder-decoder structures with skip connections. This allows the model to capture both global and local information, crucial for reconstructing the masked segments in a way that ensures smooth transitions.
 
-Network Architecture: The chosen network is a U-Net-like convolutional neural network (CNN) designed to reconstruct the masked regions. The U-Net architecture is well-suited for this task because it combines encoder-decoder structures with skip connections. This allows the model to capture both global and local information, crucial for reconstructing the masked segments in a way that ensures smooth transitions.
+3. Network Topology:
 
-Network Topology:
+  Encoder: The encoder gradually reduces the dimensionality of the input spectrogram while increasing the number of channels, allowing the network to capture more complex features.
+  Decoder: The decoder mirrors the encoder but gradually reconstructs the spectrogram, using transposed convolutions to upsample the data back to the original size.
+  Skip Connections: These connections between corresponding layers in the encoder and decoder ensure that fine-grained details from the input spectrogram are preserved during reconstruction.
 
-Encoder: The encoder gradually reduces the dimensionality of the input spectrogram while increasing the number of channels, allowing the network to capture more complex features.
-Decoder: The decoder mirrors the encoder but gradually reconstructs the spectrogram, using transposed convolutions to upsample the data back to the original size.
-Skip Connections: These connections between corresponding layers in the encoder and decoder ensure that fine-grained details from the input spectrogram are preserved during reconstruction.
+
 References:
 
 2. Loss Function Design
