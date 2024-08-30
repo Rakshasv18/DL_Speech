@@ -71,6 +71,7 @@ The code is designed to be modular, with separate files for the data loader, mod
 3. Masked Autoencoders that Listen 
 Po-Yao Huang, Hu Xu, Juncheng B Li, Alexei Baevski, Michael Auli, Wojciech Galuba, Florian Metze, Christoph Feichtenhofer
 4. Progressive loss functions for speech enhancement with deep neural networks Jorge Llombart, Dayana Ribas, Antonio Miguel, Luis Vicente, Alfonso Ortega & Eduardo Lleida EURASIP Journal on Audio, Speech, and Music Processing volume.\
+   
 5.RFWave: Multi-band Rectified Flow for Audio Waveform Reconstruction Peng Liu laupeng1989@gmail.com &Dongyang Dai accum.dai@gmail.com &Zhiyong Wu Shenzhen International Graduate School, Tsinghua University zywu@sz.tsinghua.edu.cn.\
 6.A 2019 Guide to Speech Synthesis with Deep Learning (https://fritz.ai/speech-synthesis-with-deep-learning/).\
 7.Masked Spectrogram Modeling using Masked Autoencoders for Learning General-purpose Audio Representation.\
