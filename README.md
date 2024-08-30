@@ -15,7 +15,7 @@ runs: Directory that stores the training logs, model checkpoints, and visualizat
 train.py: Main training script that initializes the model, loads the data, and trains the model.\
 Question_01.readme: Detailed documentation of the first project, including model architecture, data used, and training methodology.
 
-Question_02
+Question_02\
 This folder contains files related to the second deep learning model, focused on solving the MNIST classification problem using a custom multi-layer perceptron.\
 
 mnist.py: Script that loads the MNIST dataset and manages preprocessing tasks.\
