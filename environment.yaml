@@ -1,0 +1,21 @@
+name: audio_project_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - torch
+  - torchaudio
+  - torchvision
+  - sox
+  - tensorboard
+  - matplotlib
+  - tqdm
+  - jupyterlab
+  - pyyaml
+  - scikit-learn
+  - openml

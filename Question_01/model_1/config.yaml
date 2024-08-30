@@ -1,0 +1,10 @@
+batch_size: 32
+learning_rate: 0.001
+num_epochs: 100
+mask_percentage: 0.2
+max_mask_segments: 2
+mel_spectrogram_params:
+  n_fft: 1024
+  hop_length: 256
+  n_mels: 80
+  sample_rate: 22050
