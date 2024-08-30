@@ -4,7 +4,7 @@ For in-filling tasks such as reconstructing masked regions of a Mel-spectrogram,
  2. U-Net is better suited for tasks that involve reconstructing masked regions with detailed local and global context, especially when the entire input is available during training.
     
 
-model_1: This directory contains the model's scripts and architecture definitions.\
+model_1: This directory contains the model's scripts and architecture definitions.
 
 1. Random Masking and Network Design
 Random Masking of Mel-Spectrogram:
